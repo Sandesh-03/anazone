@@ -15,21 +15,28 @@ class _MyRegisterState extends State<MyRegister> {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('images/register1.png'), fit: BoxFit.cover),
+            image: AssetImage('images/register3.png'), fit: BoxFit.cover),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        ),
+
         body: Stack(
-          children: [
+          children: [Container(
+            width: 130,
+            height: 130,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              image: DecorationImage(
+                  image:  AssetImage('images/launch_image.png'),
+                  fit: BoxFit.fill
+              ),
+            ),
+          ),
             Container(
-              padding: EdgeInsets.only(left: 40, top: 30),
+              padding: EdgeInsets.only(left: 40, top: 120),
               child: Text(
                 'Create\nAccount',
-                style: TextStyle(color: Colors.black, fontSize: 33),
+                style: TextStyle(color: Colors.black,fontFamily: 'Tapestry' ,fontSize: 33,fontWeight: FontWeight.bold),
               ),
             ),
             SingleChildScrollView(
@@ -43,166 +50,178 @@ class _MyRegisterState extends State<MyRegister> {
                       margin: EdgeInsets.only(left: 35, right: 35),
                       child: Column(
                         children: [
-                          TextField(
-                            style: TextStyle(color: Colors.black),
-                            decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
-                                filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.white,
+                          Card(
+                            child: TextField(
+                              style: TextStyle(color: Colors.black),
+                              decoration: InputDecoration(
+                                  fillColor: Colors.grey.shade100,
+                                  filled: true,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.black,
+                                  focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.black,
+                                    ),
                                   ),
-                                ),
-                                hintText: "Name",
-                                hintStyle: TextStyle(color: Colors.grey),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                                  hintText: "Name",
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                  )),
+                            ),
                           ),
                           SizedBox(
                             height: 30,
                           ),
-                          TextField(
-                            style: TextStyle(color: Colors.black),
-                            decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
-                                filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.white,
+                          Card(
+                            child: TextField(
+                              style: TextStyle(color: Colors.black),
+                              decoration: InputDecoration(
+                                  fillColor: Colors.grey.shade100,
+                                  filled: true,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
+                                  focusedBorder: OutlineInputBorder(
 
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.black,
+                                    ),
                                   ),
-                                ),
-                                hintText: "Email",
-                                hintStyle: TextStyle(color: Colors.grey),
-                                border: OutlineInputBorder(
+                                  hintText: "Email",
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: OutlineInputBorder(
 
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                                    borderRadius: BorderRadius.circular(10),
+                                  )),
+                            ),
                           ),
                           SizedBox(
                             height: 30,
                           ),
-                          TextField(
-                            style: TextStyle(color: Colors.black),
-                            decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
-                                filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.white,
+                          Card(
+                            child: TextField(
+                              style: TextStyle(color: Colors.black),
+                              decoration: InputDecoration(
+                                  fillColor: Colors.grey.shade100,
+                                  filled: true,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
+                                  focusedBorder: OutlineInputBorder(
 
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                hintText: "School Id",
-                                hintStyle: TextStyle(color: Colors.grey),
-                                border: OutlineInputBorder(
+                                  hintText: "School Id",
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: OutlineInputBorder(
 
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                                    borderRadius: BorderRadius.circular(10),
+                                  )),
+                            ),
                           ),
                           SizedBox(
                             height: 30,
                           ),
-                          TextField(
-                            style: TextStyle(color: Colors.black),
-                            decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
-                                filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.white,
+                          Card(
+                            child: TextField(
+                              style: TextStyle(color: Colors.black),
+                              decoration: InputDecoration(
+                                  fillColor: Colors.grey.shade100,
+                                  filled: true,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
+                                  focusedBorder: OutlineInputBorder(
 
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                hintText: "School Name",
-                                hintStyle: TextStyle(color: Colors.grey),
-                                border: OutlineInputBorder(
+                                  hintText: "School Name",
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: OutlineInputBorder(
 
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                                    borderRadius: BorderRadius.circular(10),
+                                  )),
+                            ),
                           ),
                           SizedBox(
                             height: 30,
                           ),
-                          TextField(
-                            style: TextStyle(color: Colors.black),
-                            obscureText: true,
-                            decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
-                                filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.white,
+                          Card(
+                            child: TextField(
+                              style: TextStyle(color: Colors.black),
+                              obscureText: true,
+                              decoration: InputDecoration(
+                                  fillColor: Colors.grey.shade100,
+                                  filled: true,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.black,
+                                  focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.black,
+                                    ),
                                   ),
-                                ),
-                                hintText: "Password",
-                                hintStyle: TextStyle(color: Colors.grey),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                                  hintText: "Password",
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                  )),
+                            ),
                           ),
                           SizedBox(
                             height: 40,
                           ),
-                          TextField(
-                            style: TextStyle(color: Colors.black),
-                            obscureText: true,
-                            decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
-                                filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.white,
+                          Card(
+                            child: TextField(
+                              style: TextStyle(color: Colors.black),
+                              obscureText: true,
+                              decoration: InputDecoration(
+                                  fillColor: Colors.grey.shade100,
+                                  filled: true,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    color: Colors.black,
+                                  focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Colors.black,
+                                    ),
                                   ),
-                                ),
-                                hintText: "Confirm Password",
-                                hintStyle: TextStyle(color: Colors.grey),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                                  hintText: "Confirm Password",
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                  )),
+                            ),
                           ),
                           SizedBox(
                             height: 40,
@@ -214,11 +233,13 @@ class _MyRegisterState extends State<MyRegister> {
                               CircleAvatar(
                                 radius: 30,
                                 backgroundColor: Colors.blue.shade200,
-                                
+
                                 child: IconButton(
-                                  
+
                                     color: Colors.white,
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(context, 'login');
+                                    },
                                     icon: Icon(
                                       Icons.arrow_forward,
                                     )),
@@ -255,7 +276,7 @@ class _MyRegisterState extends State<MyRegister> {
             ),
           ],
         ),
-      ),
-    );
+
+    ),);
   }
 }

@@ -29,6 +29,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^10.1.0
+
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,6 +41,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  animated_splash_screen: ^1.2.0
+  icon: ^2.2.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -61,6 +66,17 @@ flutter:
   assets:
    - images/
   #   - images/a_dot_ham.jpeg
+  fonts:
+    - family: Poppins
+      fonts:
+       - asset: fonts/Poppins-BoldItalic.ttf
+
+    - family: Tapestry
+      fonts:
+       - asset: fonts/Tapestry-Regular.ttf
+    - family: AnaZone
+      fonts:
+       - asset: assets/AnaZone.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
